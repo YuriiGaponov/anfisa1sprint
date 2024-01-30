@@ -12,6 +12,7 @@ INSTALLED_APPS = [
     'homepage.apps.HomepageConfig',
     'ice_cream.apps.IceCreamConfig',
     'about.apps.AboutConfig',
+    'cinema.apps.CinemaConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -32,7 +33,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'anfisa_for_friends.urls'
 
-TEMPLATES_DIR = BASE_DIR / 'templates'
+TEMPLATES_DIR = BASE_DIR / 'templates/'
 
 TEMPLATES = [
     {
@@ -87,10 +88,10 @@ USE_L10N = True
 USE_TZ = True
 
 
-STATIC_URL = '/static/'
+STATIC_URL = '/static_dev/'
 
 STATICFILES_DIRS = [
-    BASE_DIR / 'D:\Python\dev\anfisa1sprint\html_templates',
+    BASE_DIR / 'static_dev',
     ]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
