@@ -2,7 +2,10 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <link rel="icon" href="{% static 'img/fav/fav.ico' %}" type="image">
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="{% static 'D:\Python\dev\anfisa1sprint\html_templates\img\fav\fav.ico' %}" type="image">
+    <link rel="stylesheet" href="{% static 'D:\Python\dev\anfisa1sprint\html_templates\css\bootstrap.min.css' %}">
     <title>
       {% block title %}{% endblock %}
     </title>
@@ -11,8 +14,10 @@
   <body>
     {% include "includes/header.html" %}
     <main>
-      {% block content %}
-      {% endblock %}
+      <h1 class="pb-2 mb-0">
+        {% block content %}
+        {% endblock %}
+      </h1>
     </main>
     {% include "includes/footer.html" %}   
   </body>
